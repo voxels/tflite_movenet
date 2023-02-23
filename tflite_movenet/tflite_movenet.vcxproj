@@ -163,9 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="input_image.bmp" />
-    <Image Include="input_image.jpeg">
-      <DeploymentContent>true</DeploymentContent>
-    </Image>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

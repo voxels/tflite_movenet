@@ -22,7 +22,7 @@ namespace movenet_tracking {
 		float input_std = 127.5f;
 		tflite::string model_name = "./model.tflite";
 		tflite::FlatBufferModel* model;
-		tflite::string input_jpg_name = "./input_image_copy.bmp";
+		tflite::string input_jpg_name = "./input_image.bmp";
 		tflite::string labels_file_name = "./labels.txt";
 		int number_of_threads = 4;
 		int number_of_results = 5;

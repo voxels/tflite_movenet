@@ -42,9 +42,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="input_image.jpeg">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="input_image.bmp">
       <Filter>Resource Files</Filter>
     </Image>
