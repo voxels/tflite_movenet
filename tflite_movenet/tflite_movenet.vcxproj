@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1e8ff522-9b87-4b4a-827d-9fb99cbc4d4f}</ProjectGuid>
+    <RootNamespace>tflitemovenet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\voxel\Documents\tensorflow;C:\Users\voxel\Documents\tensorflow\tensorflow\lite\schema;C:\Users\voxel\Documents\tflite_build\flatbuffers\include;C:\Users\voxel\Documents\tflite_build\abseil-cpp;C:\Users\voxel\Documents\tflite_build\eigen;C:\Users\voxel\Documents\protobuf-3.9.2\src;C:\Users\voxel\Documents\tensorflow\bazel-bin\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Users\voxel\Documents\tflite_build\Release\tensorflow-lite.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_marshalling.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_reflection.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_config.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_program_name.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_private_handle_accessor.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\container\Release\absl_raw_hash_set.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\container\Release\absl_hashtablez_sampler.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_hash.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_city.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_low_level_hash.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\status\Release\absl_status.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cord.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\types\Release\absl_bad_optional_access.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_info.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cord_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_functions.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\profiling\Release\absl_exponential_biased.lib;C:\Users\voxel\Documents\tflite_build\\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_handle.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_str_format_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\synchronization\Release\absl_synchronization.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_stacktrace.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_symbolize.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_debugging_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_demangle_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\synchronization\Release\absl_graphcycles_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_malloc_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_time.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_strings.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_strings_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_throw_delegate.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_base.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_spinlock_wait.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\numeric\Release\absl_int128.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_civil_time.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_time_zone.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\types\Release\absl_bad_variant_access.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_raw_logging_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_log_severity.lib;C:\Users\voxel\Documents\protobuf-3.9.2\Release\libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\voxel\Documents\tensorflow;C:\Users\voxel\Documents\tensorflow\tensorflow\lite\schema;C:\Users\voxel\Documents\tflite_build\flatbuffers\include;C:\Users\voxel\Documents\tflite_build\abseil-cpp;C:\Users\voxel\Documents\tflite_build\eigen;C:\Users\voxel\Documents\protobuf-3.9.2\src;C:\Users\voxel\Documents\tensorflow\bazel-bin\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Users\voxel\Documents\tflite_build\Release\tensorflow-lite.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_marshalling.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_reflection.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_config.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_program_name.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_private_handle_accessor.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\container\Release\absl_raw_hash_set.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\container\Release\absl_hashtablez_sampler.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_hash.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_city.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_low_level_hash.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\status\Release\absl_status.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cord.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\types\Release\absl_bad_optional_access.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_info.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cord_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_functions.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\profiling\Release\absl_exponential_biased.lib;C:\Users\voxel\Documents\tflite_build\\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_handle.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_str_format_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\synchronization\Release\absl_synchronization.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_stacktrace.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_symbolize.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_debugging_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_demangle_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\synchronization\Release\absl_graphcycles_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_malloc_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_time.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_strings.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_strings_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_throw_delegate.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_base.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_spinlock_wait.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\numeric\Release\absl_int128.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_civil_time.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_time_zone.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\types\Release\absl_bad_variant_access.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_raw_logging_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_log_severity.lib;C:\Users\voxel\Documents\protobuf-3.9.2\Release\libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\voxel\Documents\tensorflow;C:\Users\voxel\Documents\tensorflow\tensorflow\lite\schema;C:\Users\voxel\Documents\tflite_build\flatbuffers\include;C:\Users\voxel\Documents\tflite_build\abseil-cpp;C:\Users\voxel\Documents\tflite_build\eigen;C:\Users\voxel\Documents\protobuf-3.9.2\src;C:\Users\voxel\Documents\tensorflow\bazel-bin\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Users\voxel\Documents\tensorflow\bazel-bin\tensorflow\tensorflow_cc.lib;C:\Users\voxel\Documents\tflite_build\Release\tensorflow-lite.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_marshalling.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_reflection.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_config.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_program_name.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_private_handle_accessor.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\container\Release\absl_raw_hash_set.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\container\Release\absl_hashtablez_sampler.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_hash.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_city.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\hash\Release\absl_low_level_hash.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\status\Release\absl_status.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cord.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\types\Release\absl_bad_optional_access.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_info.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cord_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_functions.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\profiling\Release\absl_exponential_biased.lib;C:\Users\voxel\Documents\tflite_build\\_deps\abseil-cpp-build\absl\strings\Release\absl_cordz_handle.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_str_format_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\synchronization\Release\absl_synchronization.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_stacktrace.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_symbolize.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_debugging_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\debugging\Release\absl_demangle_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\synchronization\Release\absl_graphcycles_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_malloc_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_time.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_strings.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\strings\Release\absl_strings_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_throw_delegate.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_base.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_spinlock_wait.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\numeric\Release\absl_int128.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_civil_time.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\time\Release\absl_time_zone.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\types\Release\absl_bad_variant_access.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_raw_logging_internal.lib;C:\Users\voxel\Documents\tflite_build\_deps\abseil-cpp-build\absl\base\Release\absl_log_severity.lib;C:\Users\voxel\Documents\protobuf-3.9.2\Release\libprotobuf.lib;-ignore:4221;C:\Users\voxel\Documents\tflite_build\_deps\farmhash-build\Release\farmhash.lib;C:\Users\voxel\Documents\tflite_build\_deps\fft2d-build\Release\fft2d_fftsg2d.lib;C:\Users\voxel\Documents\tflite_build\_deps\fft2d-build\Release\fft2d_fftsg.lib;C:\Users\voxel\Documents\tflite_build\_deps\flatbuffers-build\Release\flatbuffers.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_context_get_ctx.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_context.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_frontend.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_kernel_arm.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_kernel_avx.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_kernel_avx2_fma.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_kernel_avx512.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_apply_multiplier.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_pack_arm.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_pack_avx.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_pack_avx2_fma.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_pack_avx512.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_prepare_packed_matrices.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_trmul.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_ctx.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_allocator.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_prepacked_cache.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_system_aligned_alloc.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_have_built_path_for_avx.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_have_built_path_for_avx2_fma.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_have_built_path_for_avx512.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_thread_pool.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_blocking_counter.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_wait.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_denormal.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_block_map.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_tune.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\Release\ruy_cpuinfo.lib;C:\Users\voxel\Documents\tflite_build\_deps\ruy-build\ruy\profiler\Release\ruy_profiler_instrumentation.lib;C:\Users\voxel\Documents\tflite_build\_deps\xnnpack-build\Release\XNNPACK.lib;C:\Users\voxel\Documents\tflite_build\_deps\cpuinfo-build\Release\cpuinfo.lib;C:\Users\voxel\Documents\tflite_build\_deps\clog-build\Release\clog.lib;C:\Users\voxel\Documents\tflite_build\pthreadpool\Release\pthreadpool.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(ProjectDir)input_image.bmp  $(ProjectDir)$(OutDir)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitmap_helpers.cc" />
+    <ClCompile Include="tflite_movenet.cpp" />
+    <ClCompile Include="tracking.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitmap_helpers.h" />
+    <ClInclude Include="bitmap_helpers_impl.h" />
+    <ClInclude Include="tracking.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="model.tflite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="input_image.bmp" />
+    <Image Include="input_image.jpeg">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
